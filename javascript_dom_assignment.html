@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dom Assignment of Rakesh Ranjan Ray</title>
+</head>
+
+<body>
+    <h3>Javascript dom Assignments,Add Event Listener</h3>
+    <button type="button" id="btn">Click for Perfrom</button>
+    <p id="over"></p>
+    <p id="Click"> </p>
+    <p id="out"> </p>
+
+
+    <script>
+        var btn = document.getElementById("btn");
+        btn.addEventListener("mouseover", function () {
+
+            document.getElementById("over").innerHTML = "It's Displaying Mouse Over!";
+
+        })
+
+
+        btn.addEventListener("click", function () {
+
+            document.getElementById("Click").innerHTML = "It's Displaying Mouse Click!";
+
+        })
+        btn.addEventListener('mouseout', mouse_is_out);
+        function mouse_is_out() {
+
+            document.getElementById("out").innerHTML = "Displaying Mouse out!";
+
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
